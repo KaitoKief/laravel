@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>About us</title>
-</head>
+@extends('layout.layout')
 
-<body>
+@section('title')
+  About
+@stop
+
+@section('body')
   <h2>About us</h2>
   <p>{{$companyname}}
   </p>
@@ -23,5 +23,4 @@
   @endforeach
 
   <button type="button" class="btn btn-default">Default</button>
-</body>
-</html>
+@stop

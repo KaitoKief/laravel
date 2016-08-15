@@ -35,3 +35,5 @@ Route::get('productindex', [
     'as' => 'productindex',
     'uses' => 'ProductController@index'
 ]);
+
+Route::resource('product','ProductController');

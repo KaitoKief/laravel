@@ -23,10 +23,26 @@ class PagesController extends Controller
   }
 
   public function getContact() {
-        return view('pages.contact');
+    $companyname = "Code Executable";
+    $isUserRegistered = false;
+
+    $users = array("Baka1", "Baka2", "Baka3", "Baka4");
+      return view('pages.contact')
+      ->with ("companyname", $companyname)
+      ->with ("isUserRegistered", $isUserRegistered)
+      ->with ("users", $users)
+      ;
   }
 
   public function getHelp() {
-    return view('pages.help');
+    $companyname = "Code Executable";
+    $isUserRegistered = false;
+
+    $users = array("Baka1", "Baka2", "Baka3", "Baka4");
+      return view('pages.help')
+      ->with ("companyname", $companyname)
+      ->with ("isUserRegistered", $isUserRegistered)
+      ->with ("users", $users)
+      ;
   }
 }
